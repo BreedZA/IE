@@ -1,0 +1,10 @@
+.SelectContorls{
+    width: 100%;
+    background-color: #61dafb;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    box-shadow: lightgreen;
+    margin: auto;
+    padding: 10px 0;
+}

@@ -1,0 +1,20 @@
+.PhaseOne {
+    height: 13%;
+    width: 80%;
+    background: lightgreen;
+}
+.PhaseTwo {
+    height: 13%;
+    width: 80%;
+    background: orange;
+}
+.PhaseThree {
+    height: 13%;
+    width: 80%;
+    background: blue;
+}
+.PhaseFour {
+    height: 13%;
+    width: 80%;
+    background: red;
+}
