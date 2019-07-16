@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
-import Progress from '../ProgressBar/ProgressBar';
-import Loging from '../../components/Loging/Loging';
 
+import LoginDetails from './LoginDetails/LoginDetails';
 class Login extends Component {
-    state = {
-      userName : 'Andrew',
-      userPassword: 'Scribbles101'
-    };
+
+
+
     render() {
         return(
             <div>
-                <Loging />
+                <LoginDetails />
+                <Route
+                    path={this.props.match.path + '/progress'}
+                     render={() => (<LoginDetails userName={this.state.userName}
+                                userPassword={this.state.userPassword}    />
+                                    )}
+                />
             </div>
         );
     }

@@ -3,12 +3,12 @@ import './NavItems.css';
 import NavigationItem from './NavigationItem/NavigationItem';
 const navItems = () => (
     <ul className="NavItems">
-        <NavigationItem link="/" active>Dashboard</NavigationItem>
-        <NavigationItem link="/">Patients</NavigationItem>
-        <NavigationItem link="/">Adminstration</NavigationItem>
-        <NavigationItem link="/">Tasks</NavigationItem>
-        <NavigationItem link="/">Forms</NavigationItem>
-        <NavigationItem link="/">Report</NavigationItem>
+        <NavigationItem link="/progress" >Dashboard</NavigationItem>
+        <NavigationItem link="/progress">Patients</NavigationItem>
+        <NavigationItem link="/progress">Adminstration</NavigationItem>
+        <NavigationItem link="/progress">Tasks</NavigationItem>
+        <NavigationItem link="/progress">Forms</NavigationItem>
+        <NavigationItem link="/progress">Report</NavigationItem>
     </ul>
 
 );

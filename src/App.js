@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Layout from './components/Layout/Layout';
 import ProgressBar from './containers/ProgressBar/ProgressBar';
-
 import Login from './containers/Login/Login';
+
 import {Route, Switch} from 'react-router-dom'
 
 class App extends Component{
@@ -10,10 +10,13 @@ class App extends Component{
     return (
 
         <div>
+
+
           <Layout>
+
               <Switch>
-          <Route path="/" exact component={Login}/>
-          <Route path="/progress" component={ProgressBar}/>
+                  <Route path="/" exact component={Login}/>
+                  <Route path="/progress" component={ProgressBar}/>
               </Switch>
           </Layout>
         </div>
@@ -21,7 +24,7 @@ class App extends Component{
     );
   }
 }
-
+//
 //<Login/>
 //<ProgressBar />
 
