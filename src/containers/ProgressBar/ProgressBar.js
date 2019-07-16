@@ -4,6 +4,7 @@ import Progress from '../../components/Progress/Progress';
 import SelectControls from '../../components/Progress/SelectControls/SelectControls';
 import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import Layout from '../../components/Layout/Layout';
 class ProgressBar extends Component {
 
     state = {
@@ -84,6 +85,7 @@ class ProgressBar extends Component {
         }
         return (
             <Auxil>
+                <Layout>
                 <Progress bars={this.state.bars}/>
                 <SelectControls
                 phaseAdded={this.addPhaseHandler}
@@ -94,6 +96,7 @@ class ProgressBar extends Component {
                 <div>
                     {progressSum}
                 </div>
+                </Layout>
             </Auxil>
         );
     }

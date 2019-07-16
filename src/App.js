@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Layout from './components/Layout/Layout';
+
 import ProgressBar from './containers/ProgressBar/ProgressBar';
 import Login from './containers/Login/Login';
 
@@ -12,13 +12,12 @@ class App extends Component{
         <div>
 
 
-          <Layout>
 
               <Switch>
                   <Route path="/" exact component={Login}/>
                   <Route path="/progress" component={ProgressBar}/>
               </Switch>
-          </Layout>
+
         </div>
 
     );

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Button from '../../../components/UI/Button/Button'
+import Input from '../../../components/UI/Input/Input';
 
 class LoginDetails extends Component {
     state = {
@@ -15,9 +16,11 @@ class LoginDetails extends Component {
                 <h2> Enter your Username and password</h2>
                 <form>
                     <h3>User Name</h3>
-                    <input type="text" name="name" placeholder="your name" />
+                    <Input inputType="input" type="text" name="name" placeholder="your name" />
                     <h3>User Password</h3>
-                    <input type="text" name="name" placeholder="***" />
+                    <Input
+                        inputType="input"
+                        type="text" name="name" placeholder="***" />
                     <div>
                         <Button>Login</Button>
                     </div>
