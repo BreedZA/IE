@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
+
 
 import LoginDetails from './LoginDetails/LoginDetails';
 class Login extends Component {
@@ -10,12 +10,7 @@ class Login extends Component {
         return(
             <div>
                 <LoginDetails />
-                <Route
-                    path={this.props.match.path + '/progress'}
-                     render={() => (<LoginDetails userName={this.state.userName}
-                                userPassword={this.state.userPassword}    />
-                                    )}
-                />
+
             </div>
         );
     }
