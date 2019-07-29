@@ -1,31 +1,30 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+/*import * as actionTypes from '../../store/actions/actionTypes';*/
+import * as ProgressBarActions from '../../store/actions/index';
+
+
+
 import Auxil from '../../hoc/Auxil'
 import Progress from '../../components/Progress/Progress';
 import SelectControls from '../../components/Progress/SelectControls/SelectControls';
 import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import Layout from '../../components/Layout/Layout';
+import {ADD_PHASES} from "../../store/actions/actionTypes";
 class ProgressBar extends Component {
 
     state = {
-        bars: {
-            phaseOne : 0,
-            phaseTwo : 0,
-            phaseThree: 0,
-            phaseFour: 0
 
-
-        },
         loading: false
     }
+    // fetches phases from the API
     componentDidMount() {
-        axios.get('https://react-my-project-3b490.firebaseio.com/saveBars.json')
-            .then(response => {
-                this.setState({bars : response.data})
-            })
+      /*
+            })*/
     }
 
-    addPhaseHandler = (type) => {
+    /*addPhaseHandler = (type) => {
         const oldCount = this.state.bars[type];
         const updatedCount = oldCount + 1;
         const updatedBars = {
@@ -49,7 +48,7 @@ class ProgressBar extends Component {
             };
             updatedBars[type] = updatedCount;
             this.setState({bars: updatedBars});
-    };
+    };*/
 
         processStoreHandler = () => {
             this.setState({loading: true});
@@ -74,7 +73,7 @@ class ProgressBar extends Component {
 
     render() {
         const disabledInfo ={
-            ...this.state.bars
+            ...this.props.br
         };
         for (let key in disabledInfo) {
             disabledInfo[key] = disabledInfo[key] <= 0
@@ -86,10 +85,10 @@ class ProgressBar extends Component {
         return (
             <Auxil>
                 <Layout>
-                <Progress bars={this.state.bars}/>
+                <Progress bars={this.props.br}/>
                 <SelectControls
-                phaseAdded={this.addPhaseHandler}
-                phaseRemoved={this.removePhaseHandler}
+                phaseAdded={this.props.onPhaseAdded}
+                phaseRemoved={this.props.onPhaseRemove}
                 phaseSave={this.processStoreHandler}
                 disabled={disabledInfo}
                 />
@@ -101,5 +100,16 @@ class ProgressBar extends Component {
         );
     }
 }
+const mapStateToProps = state => {
+    return {
+        br: state.bars
+    };
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        onPhaseAdded: (barPhases) => dispatch(ProgressBarActions.addPhase(barPhases)),
+        onPhaseRemove: (barPhases) => dispatch(ProgressBarActions.removePhase(barPhases))
+    }
+};
 
-export default  ProgressBar;
+export default connect(mapStateToProps, mapDispatchToProps)(ProgressBar);

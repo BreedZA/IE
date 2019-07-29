@@ -1,0 +1,4 @@
+export const ADD_PHASES = 'ADD_PHASES';
+export const REMOVE_PHASES = 'REMOVE_PHASES';
+export const SET_PHASE_BARS = 'SET_PHASE_BARS';
+export const FETCH_PHASES_FAILED = 'FETCH_PHASES_FAILED';
