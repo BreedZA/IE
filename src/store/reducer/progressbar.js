@@ -1,11 +1,18 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState ={
-    bars: null,
+    bars: {
+        phaseOne : 0,
+        phaseTwo : 0,
+        phaseThree: 0,
+        phaseFour: 0
+
+
+    },
     error: false
 
 
-    }
+
 
 };
 /*bars: {

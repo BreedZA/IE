@@ -9,6 +9,7 @@ const navItems = () => (
         <NavigationItem link="/progress">Tasks</NavigationItem>
         <NavigationItem link="/progress">Forms</NavigationItem>
         <NavigationItem link="/progress">Report</NavigationItem>
+            <NavigationItem link="/auth">Authenticate</NavigationItem>
     </ul>
 
 );

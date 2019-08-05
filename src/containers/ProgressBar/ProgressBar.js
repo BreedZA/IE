@@ -11,7 +11,7 @@ import SelectControls from '../../components/Progress/SelectControls/SelectContr
 import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import Layout from '../../components/Layout/Layout';
-import {ADD_PHASES} from "../../store/actions/actionTypes";
+
 class ProgressBar extends Component {
 
     state = {

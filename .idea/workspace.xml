@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51dc3fbd-ab51-4bc5-8228-79e299bf72ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/actions/Phasecreator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducer/progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducer/progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavItems/NavItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavItems/NavItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/ProgressBar/ProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ProgressBar/ProgressBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer/progressbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer/progressbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../IE Front End/redux-burger--02-finished" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../IE Front End/auth--01-form-actions" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,6 +79,7 @@
       <workItem from="1563881395080" duration="4215000" />
       <workItem from="1564053689057" duration="1869000" />
       <workItem from="1564416411179" duration="2314000" />
+      <workItem from="1565012801984" duration="4345000" />
     </task>
     <task id="LOCAL-00001" summary="aish">
       <created>1563105914063</created>
